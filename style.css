@@ -122,3 +122,15 @@ h2 {
   color: #000000;   /* optional: keep it black like your text */
 }
 
+.photo-space {
+  display: flex;
+  flex-wrap: wrap; /* allows photos to wrap on smaller screens */
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.photo-space img {
+  max-width: 45%; /* two images side by side */
+  margin: 10px;
+  border-radius: 10px; /* optional: rounded corners */
+}
