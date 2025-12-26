@@ -1,0 +1,115 @@
+/* Import Varela Round font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* General styles */
+body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: #f2efeb; /* creamy white background */
+  color: #000000; /* black text */
+  margin: 0;
+  padding: 0;
+  font-size: 22px; /* updated text size */
+}
+
+/* Header */
+header {
+  background-color: #be8cca; /* light purple */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 40px; /* updated heading size for logo */
+  font-weight: bold;
+}
+
+header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #977cbb; /* extra purple accent */
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-size: 40px; /* updated heading size */
+}
+
+h1 {
+  color: #be8cca;
+}
+
+h2 {
+  color: #977cbb; /* small accent color for subheadings */
+}
+
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.photo-space {
+  background-color: #f9f4fb; /* slightly lighter purple-ish background for photo space */
+  border: 2px dashed #977cbb; /* extra purple accent border */
+  padding: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Contact form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 22px; /* updated form text size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #be8cca; /* main light purple */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px; /* button text size */
+}
+
+.contact-form button:hover {
+  background-color: #977cbb; /* extra purple accent on hover */
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  header nav a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
